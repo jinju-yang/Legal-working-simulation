@@ -1,0 +1,5 @@
+{
+  "name": "Legal Work Simulation Demo",
+  "description": "A high-fidelity browser-based demo simulating a lawyer's workspace for film and drama props, featuring automated document drafting, legal research, and task logging.",
+  "requestFramePermissions": []
+}
