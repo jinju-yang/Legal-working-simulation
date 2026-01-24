@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>법률 업무 시스템 - 데모</title>
+  
+  <!-- Favicon 404 해결: 명시적으로 경로를 지정합니다. -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +17,11 @@
     body {
       font-family: 'Inter', 'Noto Sans KR', sans-serif;
       overflow: hidden;
-      cursor: none; /* Hide real cursor for simulated cursor */
+      cursor: none;
     }
     .serif-font {
       font-family: 'Noto Serif KR', serif;
     }
-    /* Custom scrollbar for realistic UI */
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -35,12 +38,15 @@
   "imports": {
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/"
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
 </head>
 <body class="bg-slate-50 text-slate-900 h-screen overflow-hidden select-none">
   <div id="root"></div>
+  <!-- Vite 배포 시 자동으로 주입되는 스크립트 경로가 base 설정을 따르게 됩니다. -->
 </body>
 </html>
